@@ -1,0 +1,109 @@
+.genre-list {
+  position: relative;
+  display: inline-block;
+}
+
+.genre-list__title {
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.genre-list__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.genre-list__dropdown-button {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.genre-list__dropdown-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.genre-list__dropdown-button i {
+  font-size: 0.8rem;
+  transition: transform 0.3s ease;
+}
+
+.genre-list__dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  border-radius: 4px;
+  padding: 8px 0;
+  min-width: 200px;
+  max-height: 400px;
+  overflow-y: auto;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 5px;
+}
+
+.genre-list__item {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.genre-list__item:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.genre-list__item.active {
+  background: #e50914;
+  color: #fff;
+}
+
+.genre-list__loading,
+.genre-list__error {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
+}
+
+.genre-list__error {
+  color: #e50914;
+}
+
+/* Scrollbar styles */
+.genre-list__dropdown::-webkit-scrollbar {
+  width: 8px;
+}
+
+.genre-list__dropdown::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+.genre-list__dropdown::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+.genre-list__dropdown::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+} 
