@@ -1,4 +1,4 @@
-# React Movie App - live - https://react-moview-webappp.netlify.app/
+# React Movie App - live - https://new-movie-application.netlify.app/
 
 A modern Netflix-inspired movie application built with React, featuring a beautiful UI and smooth user interactions.
 
